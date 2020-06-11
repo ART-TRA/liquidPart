@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    width: calc(100% - 400px);
+}
+.content{
+    margin-top: 150px;
+}
+nav{
+    width: 200px;
+    margin-left: 142px;
+    z-index: 50;
+    position: absolute;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 14px;
+    outline: none;
+    background: none;
+    border: none;
+}
+button::before{
+    content: '';
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    background: #111111;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+
+button:nth-child(1)::before{
+    content: 'HOME';
+}
+button:nth-child(2)::before{
+    content: 'PROJECTS';
+}
+button:nth-child(3)::before{
+    content: 'CONTACT';
+}
+button:nth-child(4)::before{
+    content: 'ABOUT';
+}
+button:nth-child(5)::before{
+    content: 'PORTFOLIO ';
+}
+button:hover::before{
+    transform: translateX(-50px);
+}
+.main_block{
+    width: 100%;
+    min-width: 500px;
+    height: 270px;
+    border: 3px solid #111;
+    position: absolute;
+    padding: 38px 60px;
+    background: #111111;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 350px;
+}
+.main_block div p:nth-child(2){
+    text-align: right;
+    margin-top: 40px;
+}
+.top_block{
+    width: 80%;
+    border: 2px solid #111;
+    color: #111;
+    height: 70px;
+    position: absolute;
+    top: -70px;
+    left: 60px;
+}
+.top_block  div{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    text-align: center;
+}
+.bottom_block{
+    border: 2px solid #111;
+    color: #111;
+    position: absolute;
+    bottom: -140px;
+    left: 70px;
+    height: 140px;
+    width: 80%;
+}
+.bottom_block  div{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#can8{
+    /*background: aquamarine;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: url('#goo');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

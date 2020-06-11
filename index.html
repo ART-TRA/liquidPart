@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>liquid_particles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="can8"></canvas>
+    <div class="container">
+        <div class="content">
+            <nav class="navigation">
+                <button class="nav_button"></button>
+                <button class="nav_button"></button>
+                <button class="nav_button"></button>
+                <button class="nav_button"></button>
+                <button class="nav_button"></button>
+            </nav>
+        </div>
+    </div>
+    <svg>
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in='SourceGraphic' stdDeviation='10' result="blur"/>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 19 -9" result="goo"/>
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+        </defs>
+    </svg>
+    <script src="script.js"></script>
+</body>
+</html>
